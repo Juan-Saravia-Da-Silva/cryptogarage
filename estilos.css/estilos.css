@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER-NAVBAR*/
+nav{
+    width: 100%;
+}
+/*BANNER*/
+.banner{
+    width: 70%;
+    height: 200px;
+    border: 3px solid blue;
+    margin: auto;
+
+    background-size: 100% 100%;
+
+    animation: banner 10s infinite;
+}
+
+@keyframes banner{
+    0%, 30% {
+        background-image: url(../media/banner-de-bitcoin-moneda-digital-dorada-criptodivisa-futurista-tecnología-dinero-concepto-red-mundial-vectorial-206807317.jpg);
+    }
+    35%, 65%{
+        background-image: url(../media/descarga.jpg);
+    }
+    70%, 100%{
+        background-image: url(../media/descarga\ \(1\).jpg);
+    }
+}
+
+/*LOGOS*/
+.promoted{
+    width: 100%;
+    height: 200px;
+    border: 2px solid blue;
+}
+
+/*COINS*/
+.Coin{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid black
+    
+}
+.logo{
+    width: 30%;
+    height: 30%;
+}
+
+.crypto{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    margin-top: 40px;
+}
+.price{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+}
+.days{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+}
+.votes{
+    width: 120px;
+    height: 100px;
+    margin-top: 40px;
+}
+/*BUTTON*/
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+    transform: translateX(5em);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+   
+   /*SECCION 2*/
+   
+   .subseccion1{
+       display: flex;
+   }
+
+   /*FOOTER*/
+   .list{
+       display: flex;
+       justify-content: space-between;
+   }
+   .text-center .p-3{
+       margin-top: 50px
+   }
+   
